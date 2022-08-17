@@ -31,15 +31,21 @@ dependencies:
     sdk: flutter
   http: ^0.13.4  
   http_interceptor: ^1.0.2
+  equatable: ^2.0.3 
+  dartz: ^0.10.1
+  flutter_triple: ^1.2.7+4
+  flutter_modular: ^3.2.2+1
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter  
+  mocktail: ^0.3.0
 
 
   # The "flutter_lints" package below contains a set of recommended lints to

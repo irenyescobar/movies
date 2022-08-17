@@ -1,27 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:movies/screens/home/home.dart';
+import 'package:flutter_modular/flutter_modular.dart';
+
+import 'app_module.dart';
+import 'app_widget.dart';
 
 void main() {
-  runApp(const MoviesApp());
+  runApp(MyApp());
 }
 
-class MoviesApp extends StatelessWidget {
-  const MoviesApp({Key? key}) : super(key: key);
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData.from(
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.pink,
-          backgroundColor: Colors.white,
-          accentColor: Colors.amber,
-          errorColor: Colors.red,
-          cardColor: Colors.white60,
-        ),
-        useMaterial3: true,
-      ),
-      home: Home(),
+    return ModularApp(
+      module: AppModule(),
+      child: AppWidget(),
     );
   }
 }
